@@ -1,0 +1,30 @@
+.navbar { 
+    background: #ededed;
+    border-bottom: 1px solid black;
+}
+
+.nav-link , .navbar-brand { 
+    color: black; cursor: pointer;
+}
+
+.nav-link { 
+    margin-right: 1em;
+}
+
+.nav-link:hover { 
+    background: #f4f4f4; color: #f97300; 
+}
+
+.navbar-collapse { 
+    justify-content: flex-end;
+}
+
+.navbar-toggler { 
+    background:#fff; 
+}
+
+.logo-img {
+    margin-left: 2em;
+    width: 4em;
+    height: 4em;
+}
