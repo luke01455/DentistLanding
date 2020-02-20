@@ -1,9 +1,44 @@
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(244, 244, 244, 0.79);
-    height: 100px;
-   }
+.header {
+  background-image: url("../../assets/images/teeth.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.1);
+}
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+  margin-left: 5em;
+}
+
+@media (max-width: 700px){
+    .description {
+        margin: auto;
+    }
+}
+.description h1 {
+  color: #f97300;
+}
+.description p {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  line-height: 1.5;
+}
+.description button {
+  border: 1px solid #f97300;
+  background: #f97300;
+  color: #fff;
+}

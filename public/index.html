@@ -10,26 +10,11 @@
     <title>Dental Clinic</title>
 
     <!-- Fonts  -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Audiowide&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rasa&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
+
+
 
     <!-- Styles -->
     <!-- <link rel="stylesheet" type="text/css" href="src/styles/nav-bar/nav-bar.styles.css" media="screen" />
@@ -69,7 +54,12 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top ">
-      <a class="navbar-brand" href="#"> <img class='logo-img' src="src/assets/icons/Dentist1.png"></img> SharrowVale Dentist </a>
+      <a class="navbar-brand" href="#"> 
+        <div class="logo-container"> 
+          <img class='logo-img' src="src/assets/icons/Dentist1.png"></img> 
+          <h2>SharrowVale Clinic</h2> 
+        </div>  
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -84,34 +74,40 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
           <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#"> Cosmetic </a>
+            <a class="nav-link" data-value="about" href="#"> COSMETIC </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="portfolio" href="#"> Surgical </a>
+            <a class="nav-link " data-value="portfolio" href="#"> SURGICAL </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="blog" href="#"> Meet The Team </a>
+            <a class="nav-link " data-value="blog" href="#"> OUR TEAM </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="team" href="#"> Locations </a>
+            <a class="nav-link " data-value="contact" href="#"> CONTACT </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="contact" href="#">Contact</a>
-          </li>
+          <button class="btn btn-outline-secondary btn-lg"> Book Now </button>
         </ul>
       </div>
     </nav>
-    <!-- JS -->
-    <script
-      src="https://kit.fontawesome.com/ce673c609f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="jquery.js"></script>
-    <script src="bundle.js" charset="utf-8"></script>
+
   </body>
   <!-- Hero Section -->
   <header class="header">
-    <div class="overlay"></div>
+    <div class="overlay">
+      <div class="description-container">
+        <div class="description">
+          <h1>    SharrowVale Dental Clinic
+           <p>    South Yorkshire's #1 Rated Cosmetic and Surgical Dentist.
+       </p>   
+        <button class="btn btn-outline-secondary btn-lg"> Book Now </button>   </h1>  
+       </div>
+      </div>
+    </div>
   </header>
+
+      <!-- JS -->
+    <script src="https://kit.fontawesome.com/ce673c609f.js" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src="bundle.js" charset="utf-8"></script>
 
 </html>
