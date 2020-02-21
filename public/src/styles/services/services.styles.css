@@ -1,5 +1,6 @@
 .services-container {
     padding: 5em 5em 1em 5em;
+    font-family: 'Courgette', sans-serif;
 }
 
 .item-container {
@@ -23,7 +24,6 @@
 }
 
 .text-container > h1 {
-    font-family: 'Courgette', sans-serif;
     color: #323D73; 
 }
 

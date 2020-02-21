@@ -17,14 +17,13 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="src/styles/global/global-styles.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="src/styles/nav-bar/nav-bar.styles.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="src/styles/hero-section/hero-section.styles.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="src/styles/services/services.styles.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="src/styles/carousel/carousel.styles.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="src/styles/insurance-section/insurance-section.styles.css" media="screen"/>
 
     <!-- Global Styles -->
     <style>
@@ -89,22 +88,37 @@
   </header>
 
   <!-- Services -->
-<div class="container services-container">
+<div class="container services-container mx-auto d-block">
   <div class="row">
-    <div class="col icon-container"><img src="src/assets/icons/cosmeticscg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image"></div>
-    <div class="col-8 text-container"><h1>Cosmetic</h1><p> Creating the appearance of natural beauty requires a keen eye and attention to small details. Partnering with the best labs and NYC’s premier master ceramist has enabled us to transform smiles beautifully and naturally for years. Our goal: To be undetectable</p></div>
+    <div class="col icon-container">
+      <img src="src/assets/icons/cosmeticscg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image">
+    </div>
+    <div class="col-8 text-container">
+      <h1>Cosmetic</h1>
+      <p> Creating the appearance of natural beauty requires a keen eye and attention to small details. Partnering with the best labs and NYC’s premier master ceramist has enabled us to transform smiles beautifully and naturally for years. Our goal: To be undetectable</p>
+    </div>
     <div class="w-100"></div>
-    <div class="col icon-container"><img src="src/assets/icons/familysvg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image"></div>
-    <div class="col-8 text-container"><h1>Family</h1><p> We offer a full range of services for your whole family. You can feel confident that Grand Street Dental will meet all your dental needs. We are excited to have your family join ours!</p></div>
+    <div class="col icon-container">
+      <img src="src/assets/icons/familysvg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image">
+    </div>
+    <div class="col-8 text-container">
+      <h1>Family</h1>
+      <p> We offer a full range of services for your whole family. You can feel confident that Grand Street Dental will meet all your dental needs. We are excited to have your family join ours!</p>
+    </div>
     <div class="w-100"></div>
-    <div class="col icon-container"><img src="src/assets/icons/restorativesvg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image"></div>
-    <div class="col-8 text-container"><h1>Restorative</h1><p> We rely on the most trusted technologies while looking to the future. Our office is outfitted with the latest technologies from digital X-rays, to 3D scanning to make your visit as easy and painless as possible, while also keeping the environment and your comfort in mind!</p></div>
-    <div class="w-100"></div>
+    <div class="col icon-container">
+      <img src="src/assets/icons/restorativesvg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image">
+    </div>
+    <div class="col-8 text-container">
+      <h1>Restorative</h1>
+      <p> We rely on the most trusted technologies while looking to the future. Our office is outfitted with the latest technologies from digital X-rays, to 3D scanning to make your visit as easy and painless as possible, while also keeping the environment and your comfort in mind!</p>
+    </div>
   </div>
+  <button id="cta-button" class="btn btn-outline-secondary btn-lg mx-auto d-block"> View full list of services </button>
 </div>
 
 <!-- Carousel -->
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="src/assets/images/GSD_MainPage.jpg" class="d-block w-100" alt="img">
@@ -116,15 +130,30 @@
       <img src="src/assets/images/chair-clean.jpg" class="d-block w-100" alt="img">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carousel-wrapper" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carousel-wrapper" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+<!-- Team Section -->
+
+<div class="container insurance-container mx-auto d-block">
+  <div class="col insurance-wrapper">
+    <h1> Insurance Check </h1>
+    <h2> Curious if your insurance covers you for a SharrowVale checkup? We can tell you in just a few seconds </h2>
+    <form class="search-form">
+      <input type="text" class="search" placeholder="Enter your insurance provider" onfocus="this.placeholder = ''"
+      onblur=" this.placeholder = 'Enter your insurance provider'">
+    </form>
+    <button id="cta-button" class="btn btn-outline-secondary btn-lg mx-auto d-block"> Check </button>
+  </div>
+</div>
+
       <!-- JS -->
     <script src="https://kit.fontawesome.com/ce673c609f.js" crossorigin="anonymous"></script>
     <script src="jquery.js"></script>
