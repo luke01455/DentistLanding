@@ -1,0 +1,12 @@
+.item-container {
+    justify-content: space-around;
+}
+
+.item-container > h1 {
+    text-align: center;
+}
+
+.icon-container {
+    width: 200px;
+    height: 200px;
+}

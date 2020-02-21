@@ -1,13 +1,14 @@
 .navbar { 
-    background: rgba(244, 244, 244, 0);
+    background: rgba(244, 244, 244, 0.9);
     border-bottom: 1px solid black;
 }
 
 .nav-link , .navbar-brand { 
-    color: black; cursor: pointer;
+    color: #323D73; cursor: pointer;
 }
 
 .navbar-brand {
+    color: #323D73; 
     font-family: 'Jim Nightshade', cursive;
 }
 
@@ -18,23 +19,26 @@
 }
 
 .logo-container > h2 {
+    font-weight: 450;
     margin-left: 0.5em;
     margin-top: 0.6em;
 }
 
 .navbar-brand:hover {
-    color: black;
+    color: #323D73;
 }
 
 .nav-link { 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 0.9em;
     font-weight: 600;
+    margin-top: 0.4em;
     margin-right: 1em;
 }
 
 .nav-link:hover { 
-    background: #f4f4f4; color: #f97300; 
+    background: #f4f4f4;
+    color: black;
 }
 
 .navbar-collapse { 
