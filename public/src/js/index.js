@@ -28,3 +28,6 @@
         }, 500);
     });
 });
+
+//call carousel
+$('.carousel').carousel()

@@ -3,3 +3,7 @@
     background: #323D73;
     color: #fff;
   }
+
+#cta-button:hover {
+  background: #2c6078;
+}
