@@ -1,0 +1,10 @@
+.footer-container {
+    text-align: center;
+    font-family: Montserrat;
+    background-color: #5e5f61;
+    color: white;
+}
+.upper-footer-container { 
+    align-content: center;
+    justify-content: space-around;
+}
