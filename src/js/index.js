@@ -18,3 +18,6 @@ $(function () {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
+
+  //call carousel
+$('.carousel').carousel() 
