@@ -19,5 +19,5 @@ $(function () {
     });
   });
 
-  //call carousel
-$('.carousel').carousel() 
+  $('.carousel-control-next').click(function(){ $('.carousel').carousel('next')});
+  $('.carousel-control-prev').click(function(){ $('.carousel').carousel('prev')});
