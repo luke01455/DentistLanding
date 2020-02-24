@@ -1,0 +1,30 @@
+#cta-button {
+    border: 1px solid #323D73;
+    background: #323D73;
+    color: #fff;
+    border-radius: 0px;
+    font-family: 'Ubuntu' !important;
+  }
+
+#cta-button:hover {
+  background: #2c6078;
+}
+
+.services-container > #cta-button {
+  margin: 3em;
+}
+
+.insurance-wrapper > #cta-button {
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  font-size: 1.4em;
+}
+
+.upper-footer-container > #cta-button {
+  font-size: 1em;
+}
+
+.navbar-cta-button {
+  font-family: 'Ubuntu' !important;
+  font-size: 1em;
+}
+

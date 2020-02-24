@@ -1,0 +1,44 @@
+.header {
+  background-image: url("../../assets/images/teeth.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* .overlay {
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(244, 244, 244, 0.1);
+} */
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+  margin-left: 5em;
+  background: rgba(244, 244, 244, 0.8);
+}
+
+@media (max-width: 700px){
+    .description {
+        margin: auto;
+    }
+}
+.description h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #323D73;
+  font-weight: 500;
+  
+}
+.description p {
+  margin-top: 1em;
+  font-family: 'Montserrat',;
+  color: #2c6078;
+  font-size: 20px;
+  width: 100%;
+  line-height: 1.5;
+}

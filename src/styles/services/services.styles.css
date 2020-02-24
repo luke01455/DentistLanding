@@ -1,0 +1,40 @@
+.services-container {
+    padding: 5em 5em 1em 5em;
+    font-family: 'Courgette', sans-serif;
+}
+
+.item-container {
+    justify-content: space-around;
+}
+
+.item-container > h1 {
+    text-align: center;
+
+}
+
+.icon-container {
+    height: 5em;
+    align-items: center;
+    align-content: center;
+}
+
+.icon-image {
+    width: auto;
+    height: 100%;
+}
+
+.text-container > h1 {
+    color: #323D73; 
+}
+
+.text-container > p {
+    font-family: sans-serif;
+    color: #2c6078;
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width: 500px) {
+    .icon-container {
+        display: none;
+    }
+}
