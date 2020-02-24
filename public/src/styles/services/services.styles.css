@@ -32,3 +32,9 @@
     color: #2c6078;
     padding-bottom: 2em;
 }
+
+@media screen and (max-width: 500px) {
+    .icon-container {
+        display: none;
+    }
+}

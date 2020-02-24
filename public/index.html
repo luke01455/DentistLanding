@@ -9,13 +9,6 @@
 
     <title>Dental Clinic</title>
 
-    <!-- Fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
@@ -26,6 +19,17 @@
     <link rel="stylesheet" type="text/css" href="src/styles/insurance-section/insurance-section.styles.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="src/styles/footer/footer.styles.css" media="screen"/>
 
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+
     <!-- Global Styles -->
     <style>
       /* * { 
@@ -35,11 +39,13 @@
     </style>
   </head>
   <body>
+
+
     <nav class="navbar navbar-expand-lg fixed-top ">
-      <a class="navbar-brand" href="#"> 
+      <a class="navbar-brand" href="#hero-section"> 
         <div class="logo-container"> 
           <img class='logo-img' src="src/assets/icons/Dentist1.png"></img> 
-          <h2>SharrowVale Clinic</h2> 
+          <h2 class='nav-title'>SharrowVale Clinic</h2> 
         </div>  
       </a>
       <button
@@ -51,23 +57,20 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"> <i class="fas fa-bars"></i> </span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
           <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#"> COSMETIC </a>
+            <a class="nav-link" data-value="about" href="#services-section"> SERVICES </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="portfolio" href="#"> SURGICAL </a>
+            <a class="nav-link " data-value="portfolio" href="#carousel-section"> ABOUT </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " data-value="blog" href="#"> OUR TEAM </a>
+            <a class="nav-link " data-value="contact" href="#footer-section"> CONTACT </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="contact" href="#"> CONTACT </a>
-          </li>
-          <button id="cta-button"  class="btn btn-outline-secondary btn-lg"> Book Now </button>
+          <button id="cta-button"  class="btn btn-outline-secondary btn-lg navbar-cta-button"> BOOK ONLINE </button>
         </ul>
       </div>
     </nav>
@@ -75,7 +78,7 @@
   </body>
 
   <!-- Hero Section -->
-  <header class="header">
+  <header id="hero-section" class="header">
     <div class="overlay">
       <div class="description-container">
         <div class="description">
@@ -89,7 +92,7 @@
   </header>
 
   <!-- Services -->
-<div class="container services-container mx-auto d-block">
+<div id='services-section' class="container services-container mx-auto d-block">
   <div class="row">
     <div class="col icon-container">
       <img src="src/assets/icons/cosmeticscg.svg" class="icon-image img-fluid mx-auto d-block" alt="Responsive image">
@@ -119,7 +122,7 @@
 </div>
 
 <!-- Carousel -->
-<div id="carousel-wrapper" class="carousel slide" data-ride="carousel">
+<div id='carousel-section'id="carousel-wrapper" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="src/assets/images/GSD_MainPage.jpg" class="d-block w-100" alt="img">
@@ -155,41 +158,46 @@
   </div>
 </div>
 <!-- Footer -->
-<div class='container footer-container'>
+<div id='footer-section'class='footer-wrapper'>
+<nav class='container footer-container'>
   <div class='col'>
     <div class='row upper-footer-container'>
-      <button id="cta-button"  class="btn btn-outline-secondary btn-lg"> Book Now </button>
-      <h1> Find available appointments </h1>
+      <button id="cta-button"  class="btn btn-outline-secondary btn-lg"> BOOK ONLINE </button>
+      <h3 class='footer-title'> Find available appointments </h3>
     </div>
     <div class='row'> 
-      <div class='col'>
-        <h2> Office Hours </h2>
+      <div class='col lower-footer-section'>
+        <h2 class='lower-footer-title'> Office Hours </h2>
         <p> Mon - Frid</p>
         <p> Mon - Frid</p>
         <p> Mon - Frid</p>
         <p> Mon - Frid</p>
         <p> Mon - Frid</p>
       </div>
-      <div class='col'>
-        <h2> Contact Us </h2>
+      <div class='col lower-footer-section'>
+        <h2 class='lower-footer-title'> Contact Us </h2>
         <p> 544 Sharrowvale road, Sheffield S11 9DP</p>
         <p> 07785775892 </p>
         <p> hello@sharrowvaledentist.com</p>
       </div>
-      <div class='col'>
-        <h2> Instagram </h2>
-        <p> "The cool Brooklyn dentist who wants teeth to look as nice as her instagram feed"</p>
-        <p> - New York Magazine </p>
-        <p> Insta Logo </p>
+      <div class='col lower-footer-section'>
+        <h2 class='lower-footer-title'> Instagram </h2>
+        <p> "The cool Yorkshire dentist who wants teeth to look as nice as her instagram feed"</p>
+        <p> - Sheffield Times  </p>
+        <a> <i id='insta-logo' class="fab fa-instagram"></i> </a>
       </div>
     </div>
   </div>
+</nav>
 </div>
 
+
+
       <!-- JS -->
-    <script src="https://kit.fontawesome.com/ce673c609f.js" crossorigin="anonymous"></script>
     <script src="jquery.js"></script>
-    <script src="bundle.js" charset="utf-8"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ce673c609f.js" crossorigin="anonymous"></script>
+    <script src="bundle.js" charset="utf-8"></script>
+
 
 </html>

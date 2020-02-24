@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./public/src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
+/***/ "./public/src/js/index.js":
+/*!********************************!*\
+  !*** ./public/src/js/index.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n// toggle the hamburger menu\n(function () {\n\n  var hamburger = {\n    navToggle: document.querySelector('.nav-toggle'),\n    nav: document.querySelector('nav'),\n\n    doToggle: function doToggle(e) {\n      e.preventDefault();\n      this.navToggle.classList.toggle('expanded');\n      this.nav.classList.toggle('expanded');\n    }\n  };\n\n  hamburger.navToggle.addEventListener('click', function (e) {\n    hamburger.doToggle(e);\n  });\n  hamburger.nav.addEventListener('click', function (e) {\n    hamburger.doToggle(e);\n  });\n})();\n\n// smooth scroll to an id from href\n$(document).ready(function () {\n  // on clicking any href which has a hash\n  $('a[href*=\\\\#]').on('click', function (e) {\n    e.preventDefault();\n    $('html, body').animate({\n      scrollTop: $(this.hash).offset().top\n    }, 500);\n  });\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\n// smooth scroll to an id from href\n$(document).ready(function () {\n    // on clicking any href which has a hash\n    $('a[href*=\\\\#]').on('click', function (e) {\n        e.preventDefault();\n        $('html, body').animate({\n            scrollTop: $(this.hash).offset().top\n        }, 500);\n    });\n});\n\n// header changes colour when scrolled below navbars height\n$(function () {\n    $(document).scroll(function () {\n        var $nav = $(\".fixed-top\");\n        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());\n    });\n});\n\n//# sourceURL=webpack:///./public/src/js/index.js?");
 
 /***/ })
 

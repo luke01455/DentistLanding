@@ -1,22 +1,4 @@
 
-// toggle the hamburger menu
-(function() {
-
-    var hamburger = {
-      navToggle: document.querySelector('.nav-toggle'),
-      nav: document.querySelector('nav'),
-  
-      doToggle: function(e) {
-        e.preventDefault();
-        this.navToggle.classList.toggle('expanded');
-        this.nav.classList.toggle('expanded');
-      }
-    };
-  
-    hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
-    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
-  
-  }());
 
   // smooth scroll to an id from href
   $(document).ready(function() {
@@ -29,5 +11,10 @@
     });
 });
 
-//call carousel
-$('.carousel').carousel()
+ // header changes colour when scrolled below navbars height
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
